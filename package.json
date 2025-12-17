@@ -1,0 +1,11 @@
+{
+  "name": "jihclubs",
+  "version": "1.0.0",
+  "description": "Веб-приложение для управления клубными мероприятиями в JIHC (Jambyl Innovation High College).",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
