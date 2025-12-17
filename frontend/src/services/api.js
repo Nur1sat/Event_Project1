@@ -1,7 +1,17 @@
 import axios from 'axios'
 
+// Get API URL from environment or use default
+const getApiUrl = () => {
+  // In production, use the server backend URL
+  if (import.meta.env.PROD) {
+    return import.meta.env.VITE_API_URL || 'http://146.103.117.133:8007/api'
+  }
+  // In development, use proxy
+  return '/api'
+}
+
 const api = axios.create({
-  baseURL: '/api',
+  baseURL: getApiUrl(),
   headers: {
     'Content-Type': 'application/json'
   }
